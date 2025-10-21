@@ -2,111 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Love Letter</title>
+  <title>To Amelia - A Love Letter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts for elegance and emotion -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Roboto:400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #f8f6fb;
-      color: #343053;
-      font-family: 'Montserrat', 'Arial', sans-serif;
       margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 35% 105%, #ffd8e3 0%, #f8f6fb 60%, #e41b1c20 100%);
+      font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+      color: #383053;
+      overflow-x: hidden;
     }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #fff;
-      box-shadow: 0 0 24px #ece9f7;
-      border-radius: 16px;
-      padding: 40px;
+
+    .hero-section {
+      background: linear-gradient(135deg, #f7f1f7 65%, #e41b1c13 100%);
+      box-shadow: 0 20px 60px #e6e0f72a;
+      border-radius: 0 0 50% 50% / 0 0 18% 18%;
+      padding: 44px 0 87px 0;
       text-align: center;
+      position: relative;
+      z-index: 5;
     }
-    h1 {
+
+    .photo {
+      width: 175px;
+      height: 175px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #e41b1c33;
+      box-shadow: 0 2px 24px #e6e0f736;
+      margin-top: 0;
+      margin-bottom: 20px;
+      background: #fcf8f8;
+      animation: float 5s ease-in-out infinite alternate;
+      display: inline-block;
+      position: relative;
+      top: -26px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0);}
+      100% { transform: translateY(-16px);}
+    }
+
+    .heart {
+      font-size: 2.8em;
+      margin-bottom: 12px;
       color: #e41b1c;
-      margin-bottom: 24px;
+      animation: pulse 1.35s infinite alternate;
+      display: inline-block;
     }
-    p {
-      font-size: 1.2em;
-      line-height: 1.8;
-      margin: 32px 0;
+    @keyframes pulse {
+      0% { transform: scale(1);}
+      100% { transform: scale(1.10);}
     }
+
+    .greeting {
+      font-size: 2.8em;
+      font-family: 'Playfair Display', serif;
+      color: #e41b1c;
+      margin: 20px 0 12px 0;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 1.15em;
+      letter-spacing: .04em;
+      color: #ad4664;
+      margin-bottom: 14px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .letter-area {
+      max-width: 700px;
+      margin: 36px auto 0 auto;
+      padding: 28px 32px 54px 32px;
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 0 36px #ece9f7;
+      border-radius: 24px;
+      border: 1.7px solid #eecae6;
+      text-align: left;
+    }
+
+    .quote {
+      font-size: 1.35em;
+      font-style: italic;
+      color: #b85c72;
+      margin: 34px 0 38px 0;
+      padding: 0 20px;
+      line-height: 1.75;
+      border-left: 3px solid #e41b1c55;
+      background: #f9f3f7;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .letter-body {
+      color: #43345A;
+      font-size: 1.22em;
+      line-height: 2.08;
+      margin-top: 24px;
+      margin-bottom: 40px;
+      font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    }
+
     .signature {
+      margin-top: 54px;
+      font-family: 'Playfair Display', cursive, serif;
       font-style: italic;
       color: #b21f21;
-      margin-top: 40px;
-      font-size: 1.1em;
+      font-size: 1.18em;
+      letter-spacing: 2px;
+      text-align: right;
+      padding-right: 14px;
     }
-    .heart {
-      font-size: 2.6em;
-      margin-bottom: 10px;
-      color: #e41b1c;
+
+    .footer {
+      text-align: center;
+      margin: 40px 0 0 0;
+      font-size: 1.08em;
+      color: #a599b7;
+      letter-spacing: .07em;
+      font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 750px) {
+      .hero-section {
+        padding-bottom: 46px;
+        border-radius: 0 0 27% 27% / 0 0 13% 13%;
+      }
+      .letter-area {
+        padding: 22px 4vw 32px 4vw;
+      }
+      .photo {
+        width: 108px;
+        height: 108px;
+        top: -12px;
+      }
+      .greeting { font-size: 2em; }
+      .quote { font-size: 1.06em; }
+      .letter-body { font-size: 1em; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="hero-section">
+    <img class="photo" src="myphoto.jpg" alt="Couple Photo" onerror="this.style.display='none'">
     <div class="heart">❤️</div>
-    <h1>To Amelia,</h1>
-    <p>
-      Every day with you is a page in my favorite story.<br>
-      I made this website as a simple way to remind you how special you are.<br><br>
-      You inspire me, you make me laugh, and you fill my life with meaning. I love you!
-    </p>
-    <div class="signature">Forever yours,<br> Aidan</div>
+    <div class="greeting">To Amelia,</div>
+    <div class="subtitle">A letter from my heart</div>
   </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Love Letter</title>
-  <style>
-    body {
-      background: #f8f6fb;
-      color: #343053;
-      font-family: 'Montserrat', 'Arial', sans-serif;
-      margin: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #fff;
-      box-shadow: 0 0 24px #ece9f7;
-      border-radius: 16px;
-      padding: 40px;
-      text-align: center;
-    }
-    h1 {
-      color: #e41b1c;
-      margin-bottom: 24px;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.8;
-      margin: 32px 0;
-    }
-    .signature {
-      font-style: italic;
-      color: #b21f21;
-      margin-top: 40px;
-      font-size: 1.1em;
-    }
-    .heart {
-      font-size: 2.6em;
-      margin-bottom: 10px;
-      color: #e41b1c;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="heart">❤️</div>
-    <h1>To Amelia,</h1>
-    <p>
-      Every day with you is a page in my favorite story.<br>
-      I made this website as a simple way to remind you how special you are.<br><br>
-      You inspire me, you make me laugh, and you fill my life with meaning. I love you!
-    </p>
-    <div class="signature">Forever yours,<br> Aidan</div>
+  <div class="letter-area">
+    <div class="quote">
+      “You are my favorite page in the story of life.<br>
+      My days are brighter and better with you in them.”
+    </div>
+    <div class="letter-body">
+      Every moment with you is a memory I want to hold onto forever.<br><br>
+      I made this website to speak the words that sometimes don’t fit in a text or a card.<br>
+      Through laughter, challenge, quiet moments and busy days—<br>
+      Every step with you has filled my life with joy, with inspiration and with a sense that anything is possible together.<br><br>
+      If words could say it all, this would just be the beginning.<br>
+      Thank you, Amelia, for being you.<br>
+      I love you more than ever.
+    </div>
+    <div class="signature">Always yours,<br> Aidan</div>
   </div>
+  <div class="footer">Made for you, Amelia, with all my love.<br>© 2025</div>
 </body>
 </html>
