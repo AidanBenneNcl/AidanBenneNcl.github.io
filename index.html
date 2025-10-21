@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>To Amelia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Elegant and script fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Fonts: Playfair Display (elegant), Lato (clean), Dancing Script (soft signature) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -82,7 +82,7 @@
       text-align: left;
     }
     .quote {
-      font-size: 1.35em;
+      font-size: 1.22em;
       font-style: italic;
       font-family: 'Playfair Display', serif;
       color: #b85c72;
@@ -96,7 +96,7 @@
     }
     .letter-body {
       color: #43345A;
-      font-size: 1.24em;
+      font-size: 1.15em;
       line-height: 2.08;
       margin-top: 22px;
       margin-bottom: 40px;
@@ -104,19 +104,25 @@
       font-weight: 400;
     }
     .signature {
-      margin-top: 54px;
-      font-family: 'Great Vibes', cursive, 'Playfair Display', serif;
-      color: #e41b1c;
-      font-size: 2.1em;
-      letter-spacing: 3px;
+      margin-top: 48px;
+      font-family: 'Lato', Arial, sans-serif;
+      color: #b21f21;
+      font-size: 1.12em;
+      letter-spacing: 1.2px;
       text-align: right;
       padding-right: 14px;
-      font-weight: normal;
-      line-height: 1.2;
-      text-shadow: 0 2px 10px #eecae699;
-      border-right: 2px solid #eecae6;
-      border-radius: 0 24px 24px 0;
-      background: transparent;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+    .handwritten {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.7em;
+      color: #e41b1c;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      display: inline-block;
     }
     .footer {
       text-align: center;
@@ -141,9 +147,10 @@
         top: -12px;
       }
       .greeting { font-size: 2em; }
-      .quote { font-size: 1.06em; }
+      .quote { font-size: 1.02em; }
       .letter-body { font-size: 1em; }
-      .signature { font-size: 1.3em; }
+      .signature { font-size: 1em; }
+      .handwritten { font-size: 1.2em; }
     }
   </style>
 </head>
@@ -153,7 +160,7 @@
     <img class="photo" src="myphoto.jpg" alt="Couple Photo" onerror="this.style.display='none'">
     <div class="heart">❤️</div>
     <div class="greeting">My dearest Amelia,</div>
-    
+
   </div>
   <div class="letter-area">
     <div class="quote">
@@ -169,7 +176,9 @@
       Thank you, Amelia, for being you.<br>
       I love you more than ever.
     </div>
-    <div class="signature">Always yours,<br> Aidan</div>
+    <div class="signature">Always yours,<br>
+      <span class="handwritten">Aidan</span>
+    </div>
   </div>
   <div class="footer">Made for you, Amelia, with all my love.<br>© 2025</div>
 </body>
